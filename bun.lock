@@ -5,6 +5,7 @@
     "": {
       "name": "studly",
       "dependencies": {
+        "@better-auth/drizzle-adapter": "^1.7.25",
         "@neondatabase/serverless": "^1.2.1",
         "better-auth": "^1.7.25",
         "class-variance-authority": "^0.7.1",
