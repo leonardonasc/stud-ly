@@ -179,3 +179,17 @@
     font-family: var(--font-space-grotesk);
   }
 }
+
+@media (min-width: 64rem) {
+  html[data-sidebar-collapsed="true"] [data-sidebar-panel] {
+    width: 76px !important;
+  }
+
+  html[data-sidebar-collapsed="true"] [data-sidebar-panel] [data-sidebar-collapsed-hidden] {
+    display: none !important;
+  }
+
+  html[data-sidebar-collapsed="true"] [data-sidebar-content] {
+    margin-left: 92px !important;
+  }
+}

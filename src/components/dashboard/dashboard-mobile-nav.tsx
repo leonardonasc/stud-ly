@@ -26,7 +26,7 @@ export function DashboardMobileNav() {
   const pathname = usePathname()
 
   return (
-    <nav className="fixed bottom-5 left-1/2 z-50 w-[calc(100%-2rem)] max-w-md -translate-x-1/2 rounded-2xl border border-border/70 bg-background/85 p-2 shadow-2xl shadow-black/20 backdrop-blur-2xl md:hidden">
+    <nav className="fixed bottom-5 left-1/2 z-50 w-[calc(100%-2rem)] max-w-md -translate-x-1/2 rounded-2xl border border-border/70 bg-background/85 p-2 shadow-2xl shadow-black/20 backdrop-blur-2xl lg:hidden">
       <div className="flex h-14 items-center justify-around">
         {navigation.map((item) => {
           const Icon = item.icon

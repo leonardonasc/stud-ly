@@ -1,14 +1,5 @@
+import { DashboardOverview } from "@/components/dashboard/dashboard-overview"
 
 export default function DashboardPage() {
-  return (
-    <div>
-      <h1 className="font-heading text-2xl font-bold">
-        Dashboard
-      </h1>
-
-      <p className="mt-2 text-sm text-muted-foreground">
-        Acompanhe sua evolução nos estudos.
-      </p>
-    </div>
-  )
+  return <DashboardOverview />
 }

@@ -1,7 +1,7 @@
 
 "use client"
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { useTheme } from "next-themes"
 import { AnimatePresence, motion } from "framer-motion"
 import { Monitor, Moon, Sun, Check } from "lucide-react"
@@ -17,9 +17,15 @@ const themes = [
 export function ThemeSelector() {
   const { theme, setTheme } = useTheme()
   const [open, setOpen] = useState(false)
+  const [mounted, setMounted] = useState(false)
 
-  const CurrentIcon =
-    themes.find((item) => item.value === theme)?.icon ?? Moon
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  const CurrentIcon = mounted
+    ? themes.find((item) => item.value === theme)?.icon ?? Moon
+    : Moon
 
   return (
     <div className="relative">

@@ -47,7 +47,7 @@ export function DashboardHeader() {
         ) ?? pageInfo[0]
 
     return (
-        <header className="flex min-h-12 items-center justify-between gap-4">
+        <header className="flex min-h-12 items-center justify-between gap-4 px-1 md:px-2">
             <div className="min-w-0">
                 <h1 className="font-heading text-lg font-semibold tracking-tight">
                     {currentPage.title}
